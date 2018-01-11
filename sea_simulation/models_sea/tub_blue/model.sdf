@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+	<model name = "tub_blue">
+		<pose>0 0 0 0 0 0</pose>
+		<static>true</static>
+		<link name = "tub_blue_link">
+			<pose>0 0 0 0 0 0</pose>
+			<visual name = "tub_blue_visual">
+				<geometry>
+					<mesh>
+						<uri>file://meshes/tub_blue.dae</uri>
+					</mesh>
+				</geometry>
+			</visual>
+			<collision name="tub_blue_collision">
+				<geometry>
+					<mesh>
+						<uri>file://meshes/tub_blue.dae</uri>
+					</mesh>
+				</geometry>
+			</collision>
+		</link>
+	</model>
+</sdf>
