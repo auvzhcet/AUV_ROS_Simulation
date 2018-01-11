@@ -1,4 +1,7 @@
 
+
+![simulation screenshot](simul_screen.png  "SEA_GAZEBO")
+
 Open terminal and run
 ```
 git clone https://github.com/auvzhcet/AUV_SOFTWARE.git
