@@ -18,7 +18,7 @@ into your
  ***
  then open terminal and run 
  ```
- cd /home/sea_simulation
+ cd /home/AUV_SOFTWARE/sea_simulation
  ```
  ```
  gazebo sea_simul.world
