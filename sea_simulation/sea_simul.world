@@ -111,5 +111,9 @@
 			<pose>-0.5 10.5 0.001 0 0 0</pose>
 			<uri>model://green_mat</uri>
 		</include>
+		<include>
+			<pose>0 -9 1 0 0 1.5707</pose>
+			<uri>model://SEA_VEHICLE</uri>
+		</include>
 	</world>
 </sdf>
