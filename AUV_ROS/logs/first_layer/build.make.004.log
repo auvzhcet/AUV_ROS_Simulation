@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target first_layer_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/first_layer_node.dir/src/first_layer_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/first_layer/lib/first_layer/first_layer_node[0m
+CMakeFiles/first_layer_node.dir/src/first_layer_node.cpp.o: In function `main':
+first_layer_node.cpp:(.text+0x24c): undefined reference to `cv::VideoCapture::VideoCapture(int)'
+first_layer_node.cpp:(.text+0x251): undefined reference to `cv::VideoCapture::operator>>(cv::Mat&)'
+first_layer_node.cpp:(.text+0x27b): undefined reference to `cv::VideoCapture::VideoCapture(int)'
+first_layer_node.cpp:(.text+0x280): undefined reference to `cv::VideoCapture::operator>>(cv::Mat&)'
+first_layer_node.cpp:(.text+0x2c6): undefined reference to `cv::VideoCapture::operator>>(cv::Mat&)'
+first_layer_node.cpp:(.text+0x2e1): undefined reference to `cv::VideoCapture::operator>>(cv::Mat&)'
+first_layer_node.cpp:(.text+0x617): undefined reference to `cv::waitKey(int)'
+first_layer_node.cpp:(.text+0x65e): undefined reference to `cv::VideoCapture::~VideoCapture()'
+first_layer_node.cpp:(.text+0x66d): undefined reference to `cv::VideoCapture::~VideoCapture()'
+first_layer_node.cpp:(.text+0x90d): undefined reference to `cv::VideoCapture::~VideoCapture()'
+first_layer_node.cpp:(.text+0x921): undefined reference to `cv::VideoCapture::~VideoCapture()'
+collect2: error: ld returned 1 exit status
+CMakeFiles/first_layer_node.dir/build.make:128: recipe for target '/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/first_layer/lib/first_layer/first_layer_node' failed
+make[2]: *** [/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/first_layer/lib/first_layer/first_layer_node] Error 1
+CMakeFiles/Makefile2:579: recipe for target 'CMakeFiles/first_layer_node.dir/all' failed
+make[1]: *** [CMakeFiles/first_layer_node.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2

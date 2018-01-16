@@ -1,0 +1,6 @@
+devel_space: /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel
+install: false
+install_space: /home/marzooq/AUV_SOFTWARE/AUV_ROS/install
+profile: default
+source_space: /home/marzooq/AUV_SOFTWARE/AUV_ROS/src
+workspace: /home/marzooq/AUV_SOFTWARE/AUV_ROS
