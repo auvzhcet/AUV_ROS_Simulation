@@ -1,0 +1,4 @@
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/lib/first_layer/first_layer_node
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/lib/pkgconfig/first_layer.pc
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/share/first_layer/cmake/first_layerConfig-version.cmake
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/share/first_layer/cmake/first_layerConfig.cmake

@@ -1,0 +1,19 @@
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer/src/first_layer_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer/src/first_layer_node.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[KVideoCapture[m[K’ was not declared in this scope
+     VideoCapture cap_front(0);
+[01;32m[K     ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer/src/first_layer_node.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap_front[m[K’ was not declared in this scope
+     cap_front>>frame_front;
+[01;32m[K     ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer/src/first_layer_node.cpp:39:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcap_bottom[m[K’
+     VideoCapture cap_bottom(1);
+[01;32m[K                  ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer/src/first_layer_node.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap_bottom[m[K’ was not declared in this scope
+     cap_bottom>>frame_bottom;
+[01;32m[K     ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer/src/first_layer_node.cpp:55:19:[m[K [01;31m[Kerror: [m[K‘[01m[KwaitKey[m[K’ was not declared in this scope
+      if( waitKey(1) == 13 ) break;
+[01;32m[K                   ^[m[K
+make[2]: *** [CMakeFiles/first_layer_node.dir/src/first_layer_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/first_layer_node.dir/all] Error 2
+make: *** [all] Error 2
