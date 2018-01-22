@@ -12,12 +12,17 @@ using namespace std;
 class camera
 {
 public:
-	Mat image;
+	Mat image,img_LAB;
 	void getImageFromCam(Mat dummy_image ){
 		image = dummy_image;
 	}
 	void publishToTopic(sensor_msgs::ImagePtr msg,image_transport::Publisher pub){
 		pub.publish(msg);
+	}
+	Mat enhanceImg(){
+		cvtColor(image,img_LAB,CV_BGR2Lab);
+
+		return image;
 	}
 	
 };
@@ -46,9 +51,13 @@ int main(int argc, char** argv)
 
     	front_cam.getImageFromCam(frame_front);
     	bottom_cam.getImageFromCam(frame_bottom);
-    	msg_front = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame_front).toImageMsg();
+		
+		frame_front = front_cam.enhanceImg();
+		frame_bottom = bottom_cam.enhanceImg();
+    	
+		msg_front = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame_front).toImageMsg();
     	msg_bottom = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame_bottom).toImageMsg();
-    	front_cam.publishToTopic(msg_front,pub_front);
+		front_cam.publishToTopic(msg_front,pub_front);
     	bottom_cam.publishToTopic(msg_bottom,pub_bottom);
 
     	if( waitKey(1) == 13 ) break;
