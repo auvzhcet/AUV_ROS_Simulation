@@ -12,7 +12,8 @@ using namespace std;
 class camera
 {
 public:
-	Mat image,img_LAB;
+	Mat image,img_LAB,dst;
+	vector<Mat> img_planes_lab(3);
 	void getImageFromCam(Mat dummy_image ){
 		image = dummy_image;
 	}
@@ -21,10 +22,14 @@ public:
 	}
 	Mat enhanceImg(){
 		cvtColor(image,img_LAB,CV_BGR2Lab);
-
+		split(img_LAB,img_planes_lab);
+		Ptr<CLAHE> clahe = createCLAHE();
+		clahe->setClipLimit(4);
+		clahe->apply(img_planes_lab[0],img_planes_lab[0]);
+		merge(img_planes_lab,img_LAB);
+		cvtColor(img_LAB,image,CV_Lab2BGR);
 		return image;
 	}
-	
 };
 
 int main(int argc, char** argv)
@@ -51,10 +56,10 @@ int main(int argc, char** argv)
 
     	front_cam.getImageFromCam(frame_front);
     	bottom_cam.getImageFromCam(frame_bottom);
-		
+
 		frame_front = front_cam.enhanceImg();
 		frame_bottom = bottom_cam.enhanceImg();
-    	
+
 		msg_front = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame_front).toImageMsg();
     	msg_bottom = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame_bottom).toImageMsg();
 		front_cam.publishToTopic(msg_front,pub_front);
