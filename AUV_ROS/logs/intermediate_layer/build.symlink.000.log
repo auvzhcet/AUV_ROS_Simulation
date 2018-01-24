@@ -1,0 +1,4 @@
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/lib/intermediate_layer/intermediate_layer_node
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/lib/pkgconfig/intermediate_layer.pc
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/share/intermediate_layer/cmake/intermediate_layerConfig.cmake
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/share/intermediate_layer/cmake/intermediate_layerConfig-version.cmake

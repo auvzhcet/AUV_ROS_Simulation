@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target gate_detect_node[0m
+[ 50%] Built target intermediate_layer_node
+[ 75%] [32mBuilding CXX object CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/intermediate_layer/lib/intermediate_layer/gate_detect_node[0m
+[100%] Built target gate_detect_node

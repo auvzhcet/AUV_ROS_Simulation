@@ -1,0 +1,16 @@
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/gate_detect_node.cpp:[m[K In function ‘[01m[Kint gate_pixels(cv::Mat)[m[K’:
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/gate_detect_node.cpp:29:16:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kcv::Mat interm[m[K’
+     Mat interm(frame.size(),CV_8UC3,Scalar(0,0,0));
+[01;32m[K                ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/gate_detect_node.cpp:21:9:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Mat interm[m[K’ previously declared here
+     Mat interm(frame.size(),CV_8UC3,Scalar(0,0,0));
+[01;32m[K         ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/gate_detect_node.cpp:43:50:[m[K [01;31m[Kerror: [m[K‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<cv::Point_<int> > > >::value_type {aka class std::vector<cv::Point_<int> >}[m[K’ has no member named ‘[01m[Ktl[m[K’
+     p.x = (contours_rect[contours_rect.size()-1].tl()+contours_rect[contours_rect.size()-2].tl())/2;
+[01;32m[K                                                  ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/gate_detect_node.cpp:43:93:[m[K [01;31m[Kerror: [m[K‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<cv::Point_<int> > > >::value_type {aka class std::vector<cv::Point_<int> >}[m[K’ has no member named ‘[01m[Ktl[m[K’
+     p.x = (contours_rect[contours_rect.size()-1].tl()+contours_rect[contours_rect.size()-2].tl())/2;
+[01;32m[K                                                                                             ^[m[K
+make[2]: *** [CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/gate_detect_node.dir/all] Error 2
+make: *** [all] Error 2

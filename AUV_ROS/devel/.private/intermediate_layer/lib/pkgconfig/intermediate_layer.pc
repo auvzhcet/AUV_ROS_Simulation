@@ -1,0 +1,8 @@
+prefix=/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/intermediate_layer
+
+Name: intermediate_layer
+Description: Description of intermediate_layer
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/intermediate_layer/lib 
+Requires: 

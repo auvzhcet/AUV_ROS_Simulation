@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/gtest/src -lpthread -Wl,-rpath,/home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/gtest/src 

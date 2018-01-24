@@ -1,0 +1,18 @@
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `main':
+gate_detect_node.cpp:(.text+0x70): undefined reference to `ros::init(int&, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int)'
+gate_detect_node.cpp:(.text+0xcc): undefined reference to `ros::NodeHandle::NodeHandle(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+gate_detect_node.cpp:(.text+0x103): undefined reference to `image_transport::ImageTransport::ImageTransport(ros::NodeHandle const&)'
+gate_detect_node.cpp:(.text+0x117): undefined reference to `ros::ok()'
+gate_detect_node.cpp:(.text+0x120): undefined reference to `ros::spinOnce()'
+gate_detect_node.cpp:(.text+0x145): undefined reference to `image_transport::ImageTransport::~ImageTransport()'
+gate_detect_node.cpp:(.text+0x154): undefined reference to `ros::NodeHandle::~NodeHandle()'
+gate_detect_node.cpp:(.text+0x1ec): undefined reference to `image_transport::ImageTransport::~ImageTransport()'
+gate_detect_node.cpp:(.text+0x200): undefined reference to `ros::NodeHandle::~NodeHandle()'
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `cv::Mat::~Mat()':
+gate_detect_node.cpp:(.text._ZN2cv3MatD2Ev[_ZN2cv3MatD5Ev]+0x39): undefined reference to `cv::fastFree(void*)'
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `cv::Mat::release()':
+gate_detect_node.cpp:(.text._ZN2cv3Mat7releaseEv[_ZN2cv3Mat7releaseEv]+0x4b): undefined reference to `cv::Mat::deallocate()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/intermediate_layer/lib/intermediate_layer/gate_detect_node] Error 1
+make[1]: *** [CMakeFiles/gate_detect_node.dir/all] Error 2
+make: *** [all] Error 2

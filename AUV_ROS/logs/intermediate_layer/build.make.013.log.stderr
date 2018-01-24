@@ -1,0 +1,42 @@
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `imgCallback(boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > const> const&)':
+gate_detect_node.cpp:(.text+0x32): undefined reference to `cv_bridge::toCvShare(boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > const> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+gate_detect_node.cpp:(.text+0x65): undefined reference to `cv::waitKey(int)'
+gate_detect_node.cpp:(.text+0xa5): undefined reference to `ros::console::g_initialized'
+gate_detect_node.cpp:(.text+0xb5): undefined reference to `ros::console::initialize()'
+gate_detect_node.cpp:(.text+0xfe): undefined reference to `ros::console::initializeLogLocation(ros::console::LogLocation*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::console::levels::Level)'
+gate_detect_node.cpp:(.text+0x139): undefined reference to `ros::console::setLogLocationLevel(ros::console::LogLocation*, ros::console::levels::Level)'
+gate_detect_node.cpp:(.text+0x143): undefined reference to `ros::console::checkLogLocationEnabled(ros::console::LogLocation*)'
+gate_detect_node.cpp:(.text+0x1a7): undefined reference to `ros::console::print(ros::console::FilterBase*, void*, ros::console::levels::Level, char const*, int, char const*, char const*, ...)'
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `main':
+gate_detect_node.cpp:(.text+0x278): undefined reference to `ros::init(int&, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int)'
+gate_detect_node.cpp:(.text+0x2d4): undefined reference to `ros::NodeHandle::NodeHandle(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+gate_detect_node.cpp:(.text+0x30b): undefined reference to `image_transport::ImageTransport::ImageTransport(ros::NodeHandle const&)'
+gate_detect_node.cpp:(.text+0x31f): undefined reference to `ros::ok()'
+gate_detect_node.cpp:(.text+0x3aa): undefined reference to `ros::NodeHandle::NodeHandle(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)'
+gate_detect_node.cpp:(.text+0x515): undefined reference to `ros::NodeHandle::~NodeHandle()'
+gate_detect_node.cpp:(.text+0x565): undefined reference to `ros::spinOnce()'
+gate_detect_node.cpp:(.text+0x58d): undefined reference to `image_transport::ImageTransport::~ImageTransport()'
+gate_detect_node.cpp:(.text+0x59c): undefined reference to `ros::NodeHandle::~NodeHandle()'
+gate_detect_node.cpp:(.text+0x68e): undefined reference to `ros::NodeHandle::~NodeHandle()'
+gate_detect_node.cpp:(.text+0x70b): undefined reference to `image_transport::ImageTransport::~ImageTransport()'
+gate_detect_node.cpp:(.text+0x71f): undefined reference to `ros::NodeHandle::~NodeHandle()'
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `image_transport::TransportHints::TransportHints(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::TransportHints const&, ros::NodeHandle const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+gate_detect_node.cpp:(.text._ZN15image_transport14TransportHintsC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN3ros14TransportHintsERKNS9_10NodeHandleES8_[_ZN15image_transport14TransportHintsC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN3ros14TransportHintsERKNS9_10NodeHandleES8_]+0x53): undefined reference to `ros::NodeHandle::NodeHandle(ros::NodeHandle const&)'
+gate_detect_node.cpp:(.text._ZN15image_transport14TransportHintsC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN3ros14TransportHintsERKNS9_10NodeHandleES8_[_ZN15image_transport14TransportHintsC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN3ros14TransportHintsERKNS9_10NodeHandleES8_]+0x84): undefined reference to `ros::NodeHandle::~NodeHandle()'
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `image_transport::TransportHints::~TransportHints()':
+gate_detect_node.cpp:(.text._ZN15image_transport14TransportHintsD2Ev[_ZN15image_transport14TransportHintsD5Ev]+0x18): undefined reference to `ros::NodeHandle::~NodeHandle()'
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `image_transport::ImageTransport::subscribe(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (*)(boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > const> const&), image_transport::TransportHints const&)':
+gate_detect_node.cpp:(.text._ZN15image_transport14ImageTransport9subscribeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPFvRKN5boost10shared_ptrIKN11sensor_msgs6Image_ISaIvEEEEEERKNS_14TransportHintsE[_ZN15image_transport14ImageTransport9subscribeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjPFvRKN5boost10shared_ptrIKN11sensor_msgs6Image_ISaIvEEEEEERKNS_14TransportHintsE]+0x7b): undefined reference to `image_transport::ImageTransport::subscribe(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, boost::function<void (boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > const> const&)> const&, boost::shared_ptr<void> const&, image_transport::TransportHints const&)'
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `cv::Mat::~Mat()':
+gate_detect_node.cpp:(.text._ZN2cv3MatD2Ev[_ZN2cv3MatD5Ev]+0x39): undefined reference to `cv::fastFree(void*)'
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `cv::Mat::operator=(cv::Mat const&)':
+gate_detect_node.cpp:(.text._ZN2cv3MataSERKS0_[_ZN2cv3MataSERKS0_]+0x115): undefined reference to `cv::Mat::copySize(cv::Mat const&)'
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `cv::Mat::release()':
+gate_detect_node.cpp:(.text._ZN2cv3Mat7releaseEv[_ZN2cv3Mat7releaseEv]+0x4b): undefined reference to `cv::Mat::deallocate()'
+CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o: In function `bool ros::NodeHandle::param<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const':
+gate_detect_node.cpp:(.text._ZNK3ros10NodeHandle5paramINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKS7_RT_RKSA_[_ZNK3ros10NodeHandle5paramINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKS7_RT_RKSA_]+0x27): undefined reference to `ros::NodeHandle::hasParam(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
+gate_detect_node.cpp:(.text._ZNK3ros10NodeHandle5paramINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKS7_RT_RKSA_[_ZNK3ros10NodeHandle5paramINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKS7_RT_RKSA_]+0x42): undefined reference to `ros::NodeHandle::getParam(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) const'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/intermediate_layer/lib/intermediate_layer/gate_detect_node] Error 1
+make[1]: *** [CMakeFiles/gate_detect_node.dir/all] Error 2
+make: *** [all] Error 2

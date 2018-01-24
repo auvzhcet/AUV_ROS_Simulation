@@ -42,7 +42,7 @@ int main(int argc, char** argv)
     image_transport::Publisher pub_bottom = bottom_transport.advertise("camera/bottom", 1);
     sensor_msgs::ImagePtr msg_front,msg_bottom;
 
-    Mat frame_front,frame_bottom;
+    Mat frame_front,frame_bottom,dst;
     VideoCapture cap_front(0);
     cap_front>>frame_front;
     VideoCapture cap_bottom(1);
