@@ -22,6 +22,8 @@ int gate_pixels(Mat frame){
     Mat hsv_frame,hsv_frame_red,hsv_frame_green,hsv_frame_red1,hsv_frame_red2;
     cvtColor(frame,hsv_frame,CV_BGR2HSV);
     Mat interm(frame.size(),CV_8UC3,Scalar(0,0,0));
+    hsv_frame_red = hsv_frame;
+    hsv_frame_green = hsv_frame;
 
     inRange(hsv_frame_red,Scalar(0,100,100),Scalar(10,255,255),hsv_frame_red1);
     inRange(hsv_frame_red,Scalar(160,100,100),Scalar(180,255,255),hsv_frame_red2);
@@ -35,14 +37,14 @@ int gate_pixels(Mat frame){
     for( size_t i = 0; i < contours.size(); i++ )
     {
         boundRect[i] = boundingRect( Mat(contours[i]));
-        rectangle(interm,boundingRect(contours[i]).tl(),boundingRect(contours[i]).br(),Scalar(0,255,255),1);
+        rectangle(frame,boundingRect(contours[i]).tl(),boundingRect(contours[i]).br(),Scalar(0,255,255),1);
     }
     sort(boundRect.begin(),boundRect.end(),compareArea);
 
     Point p;
     p.y = hsv_frame.size().height/2;
     p.x = (boundRect[boundRect.size()-1].br().x+boundRect[boundRect.size()-2].tl().x)/2;
-    circle(interm,p,5,Scalar(0,255,0));
+    circle(frame,p,5,Scalar(0,255,0));
     return interm.size().width/2 - p.x;
 }
 
@@ -68,13 +70,17 @@ int main(int argc, char *argv[])
     ros::NodeHandle n;
     image_transport::ImageTransport it_front(n);
     image_transport::Subscriber sub_front;
-    ros::Publisher gate_pixels = n.advertise<std_msgs::Int16>("interm/gate_pixels", 1000);
+    ros::Publisher gate_pxls = n.advertise<std_msgs::Int16>("interm/gate_pixels", 1000);
     std_msgs::Int16 msg;
     while (ros::ok())
     {
         sub_front = it_front.subscribe("camera/front",5,imgCallback);
         msg.data = pid_img;
-        gate_pixels.publish(msg);
+        gate_pxls.publish(msg);
+        if(!frame.empty()){
+            imshow("newwin",frame);
+        }
+        ROS_INFO("%d",pid_img);
         ros::spinOnce();
     }
 

@@ -17,7 +17,8 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
 )
 find_package(OpenCV REQUIRED)
-include_directories( ${OpenCV_INCLUDE_DIRS} )
+include_directories(
+  include ${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS} )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -212,3 +213,13 @@ add_executable(gate_detect_node
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+
+add_executable(mat_localization_node
+  src/mat_localization_node.cpp
+)
+add_dependencies(mat_localization_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(mat_localization_node
+  ${catkin_LIBRARIES}
+  ${OpenCV_LIBS}
+)

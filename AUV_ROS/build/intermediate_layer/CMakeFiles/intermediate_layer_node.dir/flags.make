@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"intermediate_layer\"
 
-CXX_INCLUDES = -isystem /opt/ros/kinetic/include/opencv-3.3.1 -isystem /opt/ros/kinetic/include/opencv-3.3.1/opencv -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/include -I/opt/ros/kinetic/include -isystem /opt/ros/kinetic/include/opencv-3.3.1 -isystem /opt/ros/kinetic/include/opencv-3.3.1/opencv -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

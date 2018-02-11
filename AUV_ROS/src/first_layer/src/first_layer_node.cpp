@@ -12,23 +12,12 @@ using namespace std;
 class camera
 {
 public:
-	Mat image,img_LAB;
-	vector<Mat> img_planes_lab;
-    Ptr<CLAHE> clahe = createCLAHE();
-	void getImageFromCam(Mat dummy_image ){
+	Mat image;
+    void getImageFromCam(Mat dummy_image ){
 		image = dummy_image;
 	}
 	void publishToTopic(sensor_msgs::ImagePtr msg,image_transport::Publisher pub){
 		pub.publish(msg);
-	}
-	Mat enhanceImg(){
-		cvtColor(image,img_LAB,CV_BGR2Lab);
-		split(img_LAB,img_planes_lab);
-		clahe->setClipLimit(2);
-		clahe->apply(img_planes_lab[0],img_planes_lab[0]);
-		merge(img_planes_lab,img_LAB);
-		cvtColor(img_LAB,image,CV_Lab2BGR);
-		return image;
 	}
 };
 
@@ -57,19 +46,12 @@ int main(int argc, char** argv)
     	front_cam.getImageFromCam(frame_front);
     	bottom_cam.getImageFromCam(frame_bottom);
 
-		frame_front = front_cam.enhanceImg();
-        bilateralFilter(frame_front, dst, 10, 25, 15);
-        bilateralFilter(dst, frame_front, 10, 25, 15);
-		
-		frame_bottom = bottom_cam.enhanceImg();
-        bilateralFilter(frame_bottom, dst, 10, 25, 15);
-        bilateralFilter(dst, frame_bottom, 10, 25, 15);
-		
 		msg_front = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame_front).toImageMsg();
     	msg_bottom = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame_bottom).toImageMsg();
 		front_cam.publishToTopic(msg_front,pub_front);
     	bottom_cam.publishToTopic(msg_bottom,pub_bottom);
-
+        imshow("fframe",frame_front);
+    	imshow("bframe",frame_bottom);
     	if( waitKey(1) == 13 ) break;
     	ros::spinOnce();
     }

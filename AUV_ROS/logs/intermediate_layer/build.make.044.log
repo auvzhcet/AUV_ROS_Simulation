@@ -1,0 +1,49 @@
+[35m[1mScanning dependencies of target gate_detect_node[0m
+[  0%] Built target nav_msgs_generate_messages_eus
+[ 33%] Built target intermediate_layer_node
+[ 33%] Built target roscpp_generate_messages_eus
+[ 50%] [32mBuilding CXX object CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o[0m
+[ 50%] Built target std_msgs_generate_messages_eus
+[ 50%] Built target roscpp_generate_messages_lisp
+[ 50%] Built target geometry_msgs_generate_messages_nodejs
+[ 50%] Built target geometry_msgs_generate_messages_lisp
+[ 50%] Built target std_msgs_generate_messages_lisp
+[ 50%] Built target geometry_msgs_generate_messages_eus
+[ 50%] Built target roscpp_generate_messages_cpp
+[ 50%] Built target actionlib_msgs_generate_messages_py
+[ 50%] Built target rosgraph_msgs_generate_messages_cpp
+[ 50%] Built target sensor_msgs_generate_messages_nodejs
+[ 50%] Built target roscpp_generate_messages_nodejs
+[ 50%] Built target rosgraph_msgs_generate_messages_py
+[ 50%] Built target rosgraph_msgs_generate_messages_lisp
+[ 50%] Built target sensor_msgs_generate_messages_py
+[ 50%] Built target std_msgs_generate_messages_nodejs
+[ 50%] Built target actionlib_msgs_generate_messages_eus
+[ 50%] Built target sensor_msgs_generate_messages_cpp
+[ 50%] Built target geometry_msgs_generate_messages_py
+[ 50%] Built target sensor_msgs_generate_messages_lisp
+[ 50%] Built target rosgraph_msgs_generate_messages_eus
+[ 50%] Built target rosgraph_msgs_generate_messages_nodejs
+[ 50%] Built target roscpp_generate_messages_py
+[ 50%] Built target nav_msgs_generate_messages_cpp
+[ 50%] Built target std_msgs_generate_messages_cpp
+[ 50%] Built target sensor_msgs_generate_messages_eus
+[ 50%] Built target actionlib_msgs_generate_messages_cpp
+[ 50%] Built target nav_msgs_generate_messages_lisp
+[ 50%] Built target nav_msgs_generate_messages_nodejs
+[ 50%] Built target std_msgs_generate_messages_py
+[ 50%] Built target nav_msgs_generate_messages_py
+[ 50%] Built target actionlib_msgs_generate_messages_lisp
+[ 50%] Built target actionlib_msgs_generate_messages_nodejs
+[ 50%] Built target geometry_msgs_generate_messages_cpp
+[ 83%] Built target mat_localization_node
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/gate_detect_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/gate_detect_node.cpp:80:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kinterm[m[K’ was not declared in this scope
+         imshow("newwin",interm);
+[01;32m[K                         ^[m[K
+CMakeFiles/gate_detect_node.dir/build.make:62: recipe for target 'CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o' failed
+make[2]: *** [CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o] Error 1
+CMakeFiles/Makefile2:867: recipe for target 'CMakeFiles/gate_detect_node.dir/all' failed
+make[1]: *** [CMakeFiles/gate_detect_node.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2
