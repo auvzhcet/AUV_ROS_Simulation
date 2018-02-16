@@ -21,6 +21,16 @@ opencv2/imgproc/imgproc.hpp
 -
 opencv2/highgui/highgui.hpp
 -
+cstdio
+-
+memory
+-
+stdexcept
+-
+string
+-
+array
+-
 
 /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h

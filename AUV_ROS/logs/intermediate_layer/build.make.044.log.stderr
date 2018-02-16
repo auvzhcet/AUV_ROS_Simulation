@@ -1,7 +1,0 @@
-[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/gate_detect_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/gate_detect_node.cpp:80:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kinterm[m[K’ was not declared in this scope
-         imshow("newwin",interm);
-[01;32m[K                         ^[m[K
-make[2]: *** [CMakeFiles/gate_detect_node.dir/src/gate_detect_node.cpp.o] Error 1
-make[1]: *** [CMakeFiles/gate_detect_node.dir/all] Error 2
-make: *** [all] Error 2

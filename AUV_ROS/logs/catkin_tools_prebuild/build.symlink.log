@@ -1,8 +1,8 @@
-Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/./setup.zsh
-Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/./setup.bash
-Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/./setup.sh
 Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/./env.sh
 Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/./_setup_util.py
-Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/lib/pkgconfig/catkin_tools_prebuild.pc
-Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/./setup.sh
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/./setup.bash
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/./setup.zsh
 Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/lib/pkgconfig/catkin_tools_prebuild.pc

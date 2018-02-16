@@ -1,7 +1,0 @@
-CMakeFiles/intermediate_layer_node.dir/src/gate_detection.cpp.o: In function `main':
-gate_detection.cpp:(.text+0x0): multiple definition of `main'
-CMakeFiles/intermediate_layer_node.dir/src/intermediate_layer_node.cpp.o:intermediate_layer_node.cpp:(.text+0x0): first defined here
-collect2: error: ld returned 1 exit status
-make[2]: *** [/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/intermediate_layer/lib/intermediate_layer/intermediate_layer_node] Error 1
-make[1]: *** [CMakeFiles/intermediate_layer_node.dir/all] Error 2
-make: *** [all] Error 2

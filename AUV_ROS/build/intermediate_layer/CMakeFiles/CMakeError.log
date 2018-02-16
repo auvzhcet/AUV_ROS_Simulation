@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f26b0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f26b0.dir/build.make CMakeFiles/cmTC_f26b0.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_99c69/fast"
+/usr/bin/make -f CMakeFiles/cmTC_99c69.dir/build.make CMakeFiles/cmTC_99c69.dir/build
 make[1]: Entering directory '/home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f26b0.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_f26b0.dir/CheckSymbolExists.c.o   -c /home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_f26b0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f26b0.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_f26b0.dir/CheckSymbolExists.c.o  -o cmTC_f26b0 -rdynamic 
-CMakeFiles/cmTC_f26b0.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_99c69.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_99c69.dir/CheckSymbolExists.c.o   -c /home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_99c69
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99c69.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_99c69.dir/CheckSymbolExists.c.o  -o cmTC_99c69 -rdynamic 
+CMakeFiles/cmTC_99c69.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_f26b0.dir/build.make:97: recipe for target 'cmTC_f26b0' failed
-make[1]: *** [cmTC_f26b0] Error 1
+CMakeFiles/cmTC_99c69.dir/build.make:97: recipe for target 'cmTC_99c69' failed
+make[1]: *** [cmTC_99c69] Error 1
 make[1]: Leaving directory '/home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_f26b0/fast' failed
-make: *** [cmTC_f26b0/fast] Error 2
+Makefile:126: recipe for target 'cmTC_99c69/fast' failed
+make: *** [cmTC_99c69/fast] Error 2
 
 File /home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c88bb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c88bb.dir/build.make CMakeFiles/cmTC_c88bb.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_445c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_445c9.dir/build.make CMakeFiles/cmTC_445c9.dir/build
 make[1]: Entering directory '/home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c88bb.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c88bb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c88bb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c88bb.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_c88bb.dir/CheckFunctionExists.c.o  -o cmTC_c88bb -rdynamic -lpthreads 
+Building C object CMakeFiles/cmTC_445c9.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_445c9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_445c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_445c9.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_445c9.dir/CheckFunctionExists.c.o  -o cmTC_445c9 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c88bb.dir/build.make:97: recipe for target 'cmTC_c88bb' failed
-make[1]: *** [cmTC_c88bb] Error 1
+CMakeFiles/cmTC_445c9.dir/build.make:97: recipe for target 'cmTC_445c9' failed
+make[1]: *** [cmTC_445c9] Error 1
 make[1]: Leaving directory '/home/marzooq/AUV_SOFTWARE/AUV_ROS/build/intermediate_layer/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c88bb/fast' failed
-make: *** [cmTC_c88bb/fast] Error 2
+Makefile:126: recipe for target 'cmTC_445c9/fast' failed
+make: *** [cmTC_445c9/fast] Error 2
 
 

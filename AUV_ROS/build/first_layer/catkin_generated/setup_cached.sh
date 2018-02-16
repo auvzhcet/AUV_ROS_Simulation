@@ -8,8 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/first_layer:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/first_layer/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/first_layer/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/marzooq/AUV_SOFTWARE/AUV_ROS/build/first_layer"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/first_layer/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer:$ROS_PACKAGE_PATH"

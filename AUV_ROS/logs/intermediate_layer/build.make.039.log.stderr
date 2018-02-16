@@ -1,7 +1,0 @@
-[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/mat_localization_node.cpp:[m[K In function ‘[01m[Kint mat_pixels(cv::Mat)[m[K’:
-[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/intermediate_layer/src/mat_localization_node.cpp:17:13:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv_frame[m[K’ was not declared in this scope
-     inRange(hsv_frame,Scalar(0,100,100),Scalar(10,255,255),thres);
-[01;32m[K             ^[m[K
-make[2]: *** [CMakeFiles/mat_localization_node.dir/src/mat_localization_node.cpp.o] Error 1
-make[1]: *** [CMakeFiles/mat_localization_node.dir/all] Error 2
-make: *** [all] Error 2
