@@ -48,9 +48,9 @@ int main(int argc, char** argv)
 	ros::init(argc,argv,"first_layer_node");
     ros::NodeHandle n;
     image_transport::ImageTransport front_transport(n);
-    image_transport::Publisher pub_front = front_transport.advertise("camera/front", 1);
+    image_transport::Publisher pub_front = front_transport.advertise("/frontCamera/image_raw", 1);
     image_transport::ImageTransport bottom_transport(n);
-    image_transport::Publisher pub_bottom = bottom_transport.advertise("camera/bottom", 1);
+    image_transport::Publisher pub_bottom = bottom_transport.advertise("/bottomCamera/image_raw", 1);
     sensor_msgs::ImagePtr msg_front,msg_bottom;
     int camera_front,camera_bottom;
     if (isfront_front()){
