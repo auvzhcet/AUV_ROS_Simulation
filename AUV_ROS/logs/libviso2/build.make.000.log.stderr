@@ -1,0 +1,59 @@
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:[m[K In function ‘[01m[Kvoid printtriangle(mesh*, behavior*, otri*)[m[K’:
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1423:19:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+          t->orient);
+[01;32m[K                   ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1429:27:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printtri.orient);
+[01;32m[K                           ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1436:27:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printtri.orient);
+[01;32m[K                           ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1443:27:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printtri.orient);
+[01;32m[K                           ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1452:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 3 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printvertex[0], printvertex[1]);
+[01;32m[K                                          ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1459:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 3 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printvertex[0], printvertex[1]);
+[01;32m[K                                          ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1466:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 3 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printvertex[0], printvertex[1]);
+[01;32m[K                                          ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1472:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+              printsh.ssorient);
+[01;32m[K                              ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1477:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+              printsh.ssorient);
+[01;32m[K                              ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1482:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+              printsh.ssorient);
+[01;32m[K                              ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:[m[K In function ‘[01m[Kvoid printsubseg(mesh*, behavior*, osub*)[m[K’:
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1509:59:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+          (unsigned long long) s->ss, s->ssorient, mark(*s));
+[01;32m[K                                                           ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1515:28:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printsh.ssorient);
+[01;32m[K                            ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1522:28:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printsh.ssorient);
+[01;32m[K                            ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1531:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 3 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printvertex[0], printvertex[1]);
+[01;32m[K                                          ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1538:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 3 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printvertex[0], printvertex[1]);
+[01;32m[K                                          ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1545:27:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printtri.orient);
+[01;32m[K                           ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1552:27:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 2 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printtri.orient);
+[01;32m[K                           ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1561:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 3 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printvertex[0], printvertex[1]);
+[01;32m[K                                          ^[m[K
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src/triangle.cpp:1568:42:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lx[m[K’ expects argument of type ‘[01m[Klong unsigned int[m[K’, but argument 3 has type ‘[01m[Klong long unsigned int[m[K’ [-Wformat=]
+            printvertex[0], printvertex[1]);
+[01;32m[K                                          ^[m[K

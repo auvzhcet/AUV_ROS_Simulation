@@ -1,0 +1,7 @@
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer/src/first_layer_node.cpp:[m[K In function ‘[01m[Kbool isfront_front()[m[K’:
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer/src/first_layer_node.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+     else
+[01;32m[K     ^[m[K
+make[2]: *** [CMakeFiles/first_layer_node.dir/src/first_layer_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/first_layer_node.dir/all] Error 2
+make: *** [all] Error 2

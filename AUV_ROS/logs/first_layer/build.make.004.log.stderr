@@ -1,0 +1,4 @@
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer/src/first_layer_node.cpp:[m[K In function ‘[01m[Kbool isfront_front()[m[K’:
+[01m[K/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/first_layer/src/first_layer_node.cpp:41:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 2 has type ‘[01m[Kstd::__cxx11::string* {aka std::__cxx11::basic_string<char>*}[m[K’ [-Wformat=]
+     printf("%s\n", result);
+[01;32m[K                          ^[m[K

@@ -1,0 +1,1 @@
+/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/libviso2/lib/pkgconfig/libviso2.pc

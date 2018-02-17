@@ -1,0 +1,4 @@
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/share/libviso2/cmake/libviso2Config.cmake
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/share/libviso2/cmake/libviso2Config-version.cmake
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/lib/libviso2.so
+Symlinking /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/lib/pkgconfig/libviso2.pc

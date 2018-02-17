@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/viso2_ros/setup.sh

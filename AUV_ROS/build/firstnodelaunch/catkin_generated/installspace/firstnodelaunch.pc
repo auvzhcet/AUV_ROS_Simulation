@@ -1,0 +1,8 @@
+prefix=/home/marzooq/AUV_SOFTWARE/AUV_ROS/install
+
+Name: firstnodelaunch
+Description: Description of firstnodelaunch
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/marzooq/AUV_SOFTWARE/AUV_ROS/install/lib 
+Requires: 

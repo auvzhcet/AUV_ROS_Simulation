@@ -1,0 +1,8 @@
+prefix=/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/viso2_ros
+
+Name: viso2_ros
+Description: Description of viso2_ros
+Version: 0.0.1
+Cflags: -I/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/viso2_ros/include
+Libs: -L/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/viso2_ros/lib 
+Requires: 

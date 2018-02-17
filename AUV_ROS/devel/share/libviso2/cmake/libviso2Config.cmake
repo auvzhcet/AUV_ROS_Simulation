@@ -1,0 +1,1 @@
+/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/libviso2/share/libviso2/cmake/libviso2Config.cmake

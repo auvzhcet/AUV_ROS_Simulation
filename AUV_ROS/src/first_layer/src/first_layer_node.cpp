@@ -3,6 +3,7 @@
 #include "iostream"
 #include <cv_bridge/cv_bridge.h>
 #include <sensor_msgs/image_encodings.h>
+#include "sensor_msgs/CameraInfo.h"
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <cstdio>
@@ -10,6 +11,7 @@
 #include <stdexcept>
 #include <string>
 #include <array>
+#include "tf/transform_broadcaster.h"
 using namespace cv;
 using namespace std;
 
@@ -38,10 +40,10 @@ string exec(const char* cmd) {
 bool isfront_front(){
     string serialNo = "85A3C860";
     string result = exec("sudo udevadm info --query=all /dev/video0 | grep 'SERIAL_SHORT'");
-    if(result.find(serialNo))
+    if(result.find(serialNo)){
         return true;
-    else
-        return false;
+    }
+    return false;
 }
 int main(int argc, char** argv)
 {
@@ -52,8 +54,23 @@ int main(int argc, char** argv)
     image_transport::ImageTransport bottom_transport(n);
     image_transport::Publisher pub_bottom = bottom_transport.advertise("/bottomCamera/image_raw", 1);
     sensor_msgs::ImagePtr msg_front,msg_bottom;
+    ros::Publisher frontCamInfoPub = n.advertise<sensor_msgs::CameraInfo>("/frontCamera/camera_info", 1000);
+    ros::Publisher bottomCamInfoPub = n.advertise<sensor_msgs::CameraInfo>("/bottomCamera/camera_info", 1000);
+    
+    sensor_msgs::CameraInfo cameraFrontInfo_msg;
+    tf::TransformBroadcaster br;
+    tf::Transform transform;
+    ros::Rate rate(10.0);
+    
+    cameraFrontInfo_msg.height = 480;
+    cameraFrontInfo_msg.width = 640;
+    cameraFrontInfo_msg.distortion_model = "plumb_bob";
+    cameraFrontInfo_msg.D = {0.024129, 0.157053, 0.009537, 0.007385, 0.000000};
+    cameraFrontInfo_msg.K = {786.683917, 0.000000, 328.762141, 0.000000, 784.097932, 261.697504, 0.000000, 0.000000, 1.000000};
+    cameraFrontInfo_msg.R = {1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000};
+    cameraFrontInfo_msg.P = {801.427002, 0.000000, 331.585520, 0.000000, 0.000000, 799.029968, 264.361855, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000};
     int camera_front,camera_bottom;
-    if (isfront_front()){
+    if (!isfront_front()){
         camera_front = 0;
         camera_bottom = 1;
     }
@@ -62,6 +79,7 @@ int main(int argc, char** argv)
         camera_front = 1;
     }
     Mat frame_front,frame_bottom,dst;
+    
     VideoCapture cap_front(camera_front);
     cap_front>>frame_front;
     VideoCapture cap_bottom(camera_bottom);
@@ -70,6 +88,12 @@ int main(int argc, char** argv)
     camera front_cam,bottom_cam;
 
     while(ros::ok()){
+        transform.setOrigin( tf::Vector3(0.0, 0.0, 2.0) );
+        transform.setRotation( tf::Quaternion(0, 0, 0) );
+        br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "base_link", "/frontCamera"));
+        
+
+        frontCamInfoPub.publish(cameraFrontInfo_msg);
     	cap_front>>frame_front;
     	cap_bottom>>frame_bottom;
 

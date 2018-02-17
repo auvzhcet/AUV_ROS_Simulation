@@ -1,0 +1,5 @@
+<launch>
+	<node name="first_layer_node" pkg="first_layer" type="first_layer_node" output="screen" respawn="true" args=""/>
+	<node ns="/frontCamera" name="image_proc" pkg="image_proc" type="image_proc" output="screen" respawn="true" args="" />
+	<node name="mono_odometer" pkg="viso2_ros" type="mono_odometer" output="screen" respawn="true" args="image:=/frontCamera/image_rect" />
+</launch>

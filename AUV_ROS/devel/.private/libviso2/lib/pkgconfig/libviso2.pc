@@ -1,0 +1,8 @@
+prefix=/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/libviso2
+
+Name: libviso2
+Description: Description of libviso2
+Version: 0.0.1
+Cflags: -I/home/marzooq/AUV_SOFTWARE/AUV_ROS/src/viso2/libviso2/libviso2/src
+Libs: -L/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/libviso2/lib -lviso2
+Requires: 

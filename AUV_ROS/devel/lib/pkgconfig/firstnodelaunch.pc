@@ -1,0 +1,1 @@
+/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/firstnodelaunch/lib/pkgconfig/firstnodelaunch.pc

@@ -1,0 +1,1 @@
+/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/viso2_ros/lib/python2.7/dist-packages/viso2_ros/__init__.py

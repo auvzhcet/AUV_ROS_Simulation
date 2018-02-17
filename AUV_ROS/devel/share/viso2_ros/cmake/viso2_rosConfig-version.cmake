@@ -1,0 +1,1 @@
+/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/viso2_ros/share/viso2_ros/cmake/viso2_rosConfig-version.cmake

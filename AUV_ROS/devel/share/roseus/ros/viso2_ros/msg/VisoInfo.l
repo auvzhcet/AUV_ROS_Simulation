@@ -1,0 +1,1 @@
+/home/marzooq/AUV_SOFTWARE/AUV_ROS/devel/.private/viso2_ros/share/roseus/ros/viso2_ros/msg/VisoInfo.l
