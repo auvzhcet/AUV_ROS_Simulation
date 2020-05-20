@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+	<model name="gate">
+		<pose>0 0 0 0 0 0</pose>
+		<static>true</static>
+		<link name="sea_gate">
+			<visual name="gate_visual">
+				<geometry>
+					<mesh>
+						<uri>file://gate.dae</uri>
+					</mesh>
+				</geometry>
+			</visual>
+			<collision name="gate_collision">
+				<geometry>
+					<mesh>
+						<uri>file://gate.dae</uri>
+					</mesh>
+				</geometry>
+			</collision>
+		</link>
+	</model>
+</sdf>
